@@ -4,6 +4,7 @@ const schema = new mongoose.Schema({
     name:{
         type:String,
         required: [true, "Please Enter Your Name"],
+        minLength: [3, "Name must be atleast 3 characters"],
     },
     email:{
         type:String,
