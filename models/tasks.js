@@ -7,7 +7,7 @@ const schema = new mongoose.Schema({
     },
     description:{
         type:String,
-        select:false,
+        required:true,
     },
     isCompleted:{
         type:Boolean,
